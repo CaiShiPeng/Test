@@ -18,6 +18,8 @@ public class WyFyzTest {
 			e.printStackTrace();
 		}
 		
+		
+		
 	}
 	
 	private static class DaoException extends Exception{
