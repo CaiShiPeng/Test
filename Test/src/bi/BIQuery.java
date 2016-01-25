@@ -5,12 +5,10 @@ import java.util.List;
 public interface BIQuery {
 	
 	List<IfreUserLogin> getIfreUserLoginList(String userName);
-	
-	//查询原始数据功能先不开发
-	FqzScoreInfo getBaseFqzScoreInfo(CheckBiQuery checkBiQuery); 
-	SqpfScoreInfo getBaseSqpfScoreInfo(CheckBiQuery checkBiQuery); 
-	WyScoreInfo getBaseWyScoreInfo(CheckBiQuery checkBiQuery); 
-	
+//	//查询原始数据功能先不开发
+//	FqzScoreInfo getBaseFqzScoreInfo(CheckBiQuery checkBiQuery); 
+//	SqpfScoreInfo getBaseSqpfScoreInfo(CheckBiQuery checkBiQuery); 
+//	WyScoreInfo getBaseWyScoreInfo(CheckBiQuery checkBiQuery); 
 	int getFqzScoerNum(CheckBiQuery checkBiQuery);
 	List<FqzScoreQueryInfo> getFqzScoreQueryInfo(CheckBiQuery checkBiQuery);
 	List<SqpfScoreQueryInfo> getSqpfScoreQueryInfo(CheckBiQuery checkBiQuery);
@@ -29,16 +27,6 @@ class CheckBiQuery{
 	Date endDate;
 }
 
-class FqzScoreInfo{
-	int id;
-	int score;
-	String fqzInfo;
-}
-//step1定义
-//step2技术验证
-//step3输入
-//step4公式
-//step5输出
 class FqzScoreQueryInfo{
 	//查询量&客户量&重复查询率
 	int scoreTotalNum;
@@ -57,12 +45,6 @@ class FqzScoreQueryInfo{
 	//执行规则率
 	double avgRunRuleNum;
 	double avgRunRulePercent;
-}
-
-class SqpfScoreInfo{
-	int id;
-	int score;
-	String sqpfInfo;
 }
 
 class SqpfScoreQueryInfo{
@@ -85,12 +67,6 @@ class SqpfScoreQueryInfo{
 	int medianScore;
 	//完整度
 	double avgParameterPercent;
-}
-
-class WyScoreInfo{
-	int id;
-	int score;
-	String wyInfo;
 }
 
 class WyScoreQueryInfo{
