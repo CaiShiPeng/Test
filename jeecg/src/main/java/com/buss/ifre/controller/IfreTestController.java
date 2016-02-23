@@ -61,6 +61,9 @@ public class IfreTestController extends BaseController {
 	private IfreTestServiceI ifreTestService;
 	@Autowired
 	private SystemService systemService;
+	
+	
+	
 
 
 	/**
